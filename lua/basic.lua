@@ -1,3 +1,9 @@
+-- nvim-tree-adviced
+-- disable netrw at the very start of your init.lua (strongly advised)
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
+-- color scheme
+vim.g.material_style = "darker"
 -- utf8
 vim.g.encoding = "UTF-8"
 vim.o.fileencoding = 'utf-8'
