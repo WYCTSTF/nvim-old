@@ -79,8 +79,46 @@ map("n", "<C-f>", ":Telescope live_grep<CR>", opt)
 -- Material 设置
 map("n", "<leader>kt",":lua require('material.functions').find_style()<CR>", opt)
 
+map('n', '<leader>rn', '<cmd>lua vim.lsp.buf.rename()<CR>', opt)
+-- code action
+map('n', '<space>ca', '<cmd>lua vim.lsp.buf.code_action()<CR>', opt)
+-- go xx
+map('n', 'gd', '<cmd>lua vim.lsp.buf.definition()<CR>', opt)
+map('n', 'gh', '<cmd>lua vim.lsp.buf.hover()<CR>', opt)
+map('n', 'gD', '<cmd>lua vim.lsp.buf.declaration()<CR>', opt)
+map('n', 'gi', '<cmd>lua vim.lsp.buf.implementation()<CR>', opt)
+map('n', 'gr', '<cmd>lua vim.lsp.buf.references()<CR>', opt)
+-- diagnostic
+map('n', 'go', '<cmd>lua vim.diagnostic.open_float()<CR>', opt)
+map('n', 'gp', '<cmd>lua vim.diagnostic.goto_prev()<CR>', opt)
+map('n', 'gn', '<cmd>lua vim.diagnostic.goto_next()<CR>', opt)
+map('n', '<leader>=', '<cmd>lua vim.lsp.buf.formatting()<CR>', opt)
 
 local pluginKeys = {}
+-- nvim-cmp 自动补全
+pluginKeys.cmp = function(cmp)
+    return {
+        -- 出现补全
+        ["<A-.>"] = cmp.mapping(cmp.mapping.complete(), {"i", "c"}),
+        -- 取消
+        ["<A-,>"] = cmp.mapping({
+            i = cmp.mapping.abort(),
+            c = cmp.mapping.close()
+        }),
+        -- 上一个
+        ["<C-k>"] = cmp.mapping.select_prev_item(),
+        -- 下一个
+        ["<C-j>"] = cmp.mapping.select_next_item(),
+        -- 确认
+        ["<Tab>"] = cmp.mapping.confirm({
+            select = true,
+            behavior = cmp.ConfirmBehavior.Replace
+        }),
+        -- 如果窗口内容太多，可以滚动
+        ["<C-u>"] = cmp.mapping(cmp.mapping.scroll_docs(-4), {"i", "c"}),
+        ["<C-d>"] = cmp.mapping(cmp.mapping.scroll_docs(4), {"i", "c"}),
+    }
+end
 -- 列表快捷键
 pluginKeys.nvimTreeList = {
   -- 打开文件或文件夹

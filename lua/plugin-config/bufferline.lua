@@ -1,9 +1,11 @@
 local status, bufferline = pcall(require, "bufferline")
 if not status then
-  vim.notify("bufferline not Found!")
+    vim.notify("没有找到 bufferline")
   return
 end
 
+-- bufferline 配置
+-- https://github.com/akinsho/bufferline.nvim#configuration
 bufferline.setup({
   options = {
     -- 关闭 Tab 的命令，这里使用 moll/vim-bbye 的 :Bdelete 命令
