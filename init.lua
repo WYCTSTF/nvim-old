@@ -1,1 +1,6 @@
 require("basic")
+require("colorScheme")
+require("keybindings")
+require("plugins")
+require("color.material")
+require("plugin.nvim-tree")
