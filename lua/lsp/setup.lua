@@ -43,4 +43,12 @@ require("mason-lspconfig").setup_handlers({
     }
   }
   end,
+  ["clangd"] = function ()
+    lspconfig.clangd.setup {
+      cmd = {
+        "clangd",
+        "--header-insertion=never",
+      }
+    }
+  end
 })
