@@ -44,7 +44,7 @@ nvim_tree.setup({
     },
   },
   system_open = {
-    cmd = 'wsl-open', -- mac 直接设置为 open
+    cmd = 'open', -- mac 直接设置为 open
   },
 })
 vim.cmd([[

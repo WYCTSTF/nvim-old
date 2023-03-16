@@ -74,6 +74,7 @@ map("n", "<leader>bc", ":BufferLinePickClose<CR>", opt)
 -- Telescope
 -- 查找文件
 map("n", "<C-p>", ":Telescope find_files<CR>", opt)
+map("n", "<leader>f", ":Telescope find_files hidden=true<CR>", opt)
 -- 全局搜索
 map("n", "<C-f>", ":Telescope live_grep<CR>", opt)
 -- Material 设置
@@ -93,6 +94,8 @@ map('n', 'go', '<cmd>lua vim.diagnostic.open_float()<CR>', opt)
 map('n', 'gp', '<cmd>lua vim.diagnostic.goto_prev()<CR>', opt)
 map('n', 'gn', '<cmd>lua vim.diagnostic.goto_next()<CR>', opt)
 map('n', '<leader>=', '<cmd>lua vim.lsp.buf.formatting()<CR>', opt)
+-- 经常崩的LSP 难顶
+map('n', '<leader>r', ':LspRestart<CR>', opt)
 
 local pluginKeys = {}
 -- nvim-cmp 自动补全
