@@ -3,7 +3,7 @@
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 -- color scheme
-vim.g.material_style = "darker"
+vim.g.material_style = "lighter"
 -- utf8
 vim.g.encoding = "UTF-8"
 vim.o.fileencoding = 'utf-8'
