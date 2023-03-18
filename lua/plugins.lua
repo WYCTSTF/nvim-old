@@ -32,7 +32,16 @@ packer.startup(
     use("hrsh7th/cmp-buffer") -- { name = 'buffer' },
     use("hrsh7th/cmp-path") -- { name = 'path' }
     use("hrsh7th/cmp-cmdline") -- { name = 'cmdline' }
-
+    use {
+      'glepnir/dashboard-nvim',
+      event = 'VimEnter',
+      config = function()
+        require('dashboard').setup {
+          -- config
+        }
+      end,
+      requires = {'nvim-tree/nvim-web-devicons'}
+    }
 end)
 
 -- 每次保存 plugins.lua 自动安装插件

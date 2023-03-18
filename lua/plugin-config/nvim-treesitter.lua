@@ -5,6 +5,7 @@ if not status then
 end
 
 treesitter.setup({
+  ensure_installed = { "json", "cmake", "bash", "vim", "lua", "java", "cpp", "haskell" },
   highlight = {
     enable = true,
     additional_vim_regex_highlighting = false,
