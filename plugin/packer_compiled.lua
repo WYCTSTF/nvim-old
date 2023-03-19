@@ -104,6 +104,11 @@ _G.packer_plugins = {
     path = "/Users/syh/.local/share/nvim/site/pack/packer/start/cmp-vsnip",
     url = "https://github.com/hrsh7th/cmp-vsnip"
   },
+  ["dashboard-nvim"] = {
+    loaded = true,
+    path = "/Users/syh/.local/share/nvim/site/pack/packer/start/dashboard-nvim",
+    url = "https://github.com/glepnir/dashboard-nvim"
+  },
   ["lualine.nvim"] = {
     loaded = true,
     path = "/Users/syh/.local/share/nvim/site/pack/packer/start/lualine.nvim",
@@ -158,6 +163,16 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/syh/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
+  },
+  ["project.nvim"] = {
+    loaded = true,
+    path = "/Users/syh/.local/share/nvim/site/pack/packer/start/project.nvim",
+    url = "https://github.com/ahmedkhalf/project.nvim"
+  },
+  ["telescope-env.nvim"] = {
+    loaded = true,
+    path = "/Users/syh/.local/share/nvim/site/pack/packer/start/telescope-env.nvim",
+    url = "https://github.com/LinArcX/telescope-env.nvim"
   },
   ["telescope.nvim"] = {
     loaded = true,

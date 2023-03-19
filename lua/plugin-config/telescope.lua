@@ -1,7 +1,6 @@
 local status, telescope = pcall(require, "telescope")
 if not status then
-  vim.notify("telescope not Found!")
-  return
+  vim.notify("telescope not Found!") return
 end
 
 telescope.setup({
@@ -22,3 +21,4 @@ telescope.setup({
      -- 扩展插件配置
   },
 })
+pcall(telescope.load_extension, "env")

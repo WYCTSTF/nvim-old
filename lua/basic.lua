@@ -1,3 +1,4 @@
+vim.g.python3_host_prog = "/opt/homebrew/Caskroom/miniconda/base/bin/python"
 -- nvim-tree-adviced
 -- disable netrw at the very start of your init.lua (strongly advised)
 vim.g.loaded_netrw = 1
