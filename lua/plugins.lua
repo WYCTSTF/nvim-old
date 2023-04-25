@@ -35,6 +35,7 @@ packer.startup(
     use "LinArcX/telescope-env.nvim"
     use("glepnir/dashboard-nvim")
     use("ahmedkhalf/project.nvim")
+    use("morhetz/gruvbox")
 end)
 
 -- 每次保存 plugins.lua 自动安装插件

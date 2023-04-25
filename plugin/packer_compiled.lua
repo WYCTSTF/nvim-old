@@ -109,6 +109,11 @@ _G.packer_plugins = {
     path = "/Users/syh/.local/share/nvim/site/pack/packer/start/dashboard-nvim",
     url = "https://github.com/glepnir/dashboard-nvim"
   },
+  gruvbox = {
+    loaded = true,
+    path = "/Users/syh/.local/share/nvim/site/pack/packer/start/gruvbox",
+    url = "https://github.com/morhetz/gruvbox"
+  },
   ["lualine.nvim"] = {
     loaded = true,
     path = "/Users/syh/.local/share/nvim/site/pack/packer/start/lualine.nvim",
