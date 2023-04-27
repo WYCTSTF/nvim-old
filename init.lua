@@ -11,6 +11,7 @@ require("plugin-config.nvim-treesitter")
 require("plugin-config.telescope")
 require("plugin-config.dashboard")
 require("plugin-config.project")
+require("plugin-config.markdownPreview")
 -- LSP
 require("lsp.setup")
 require("lsp.cmp")

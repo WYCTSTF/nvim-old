@@ -1,4 +1,6 @@
+-- set nolist
 local nolist, _ = pcall(vim.cmd, "set nolist")
+-- python environment
 vim.g.python3_host_prog = "/opt/homebrew/Caskroom/miniconda/base/bin/python"
 -- nvim-tree-adviced
 -- disable netrw at the very start of your init.lua (strongly advised)
@@ -19,8 +21,6 @@ vim.wo.relativenumber = true
 vim.wo.cursorline = true
 -- 显示左侧图标指示列
 vim.wo.signcolumn = "yes"
--- 右侧参考线，超过表示代码太长了，考虑换行
-vim.wo.colorcolumn = "80"
 -- 缩进2个空格等于一个Tab
 vim.o.tabstop = 2
 vim.bo.tabstop = 2

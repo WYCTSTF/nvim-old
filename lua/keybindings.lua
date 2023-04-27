@@ -96,6 +96,9 @@ map('n', '<leader>=', '<cmd>lua vim.lsp.buf.formatting()<CR>', opt)
 -- 经常崩的LSP 难顶
 map('n', '<leader>r', ':LspRestart<CR>', opt)
 
+map("n", "<C-s>", "<cmd>MarkdownPreview<CR>", opt)
+map("n", "<M-s>", "<cmd>MarkdownPreviewStop<CR>", opt)
+
 local pluginKeys = {}
 -- nvim-cmp 自动补全
 pluginKeys.cmp = function(cmp)

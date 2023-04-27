@@ -36,6 +36,8 @@ packer.startup(
     use("glepnir/dashboard-nvim")
     use("ahmedkhalf/project.nvim")
     use("morhetz/gruvbox")
+    -- markdown preview
+    use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })
 end)
 
 -- 每次保存 plugins.lua 自动安装插件
