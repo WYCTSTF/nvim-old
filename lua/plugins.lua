@@ -4,7 +4,7 @@ packer.startup(
     use 'wbthomason/packer.nvim'
     -- color theme
     use 'marko-cerovac/material.nvim'
-    use ({ "nvim-tree/nvim-tree.lua", requires = "nvim-tree/nvim-web-devicons"})
+    use 'nvim-tree/nvim-tree.lua'
     use {'akinsho/bufferline.nvim', requires = {'nvim-tree/nvim-web-devicons', 'moll/vim-bbye'}}
     use {
       'nvim-lualine/lualine.nvim',
@@ -50,4 +50,3 @@ pcall(
     augroup end
   ]]
 )
-

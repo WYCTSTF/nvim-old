@@ -22,3 +22,4 @@ telescope.setup({
   },
 })
 pcall(telescope.load_extension, "env")
+pcall(telescope.load_extension, 'project')
