@@ -16,7 +16,6 @@ vim.o.wrap = false
 vim.o.mouse = "a"
 vim.o.timeoutlen = 500
 vim.o.updatetime = 300
-vim.opt.termguicolors = true
 vim.o.termguicolors = true
 vim.opt.wildmenu = true
 vim.o.showmode = false
