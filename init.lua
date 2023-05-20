@@ -11,3 +11,6 @@ require("plugin-config/nvim-treesitter")
 -- LSP
 require("mason").setup()
 require("lsp/setup")
+
+-- CompetiTest
+require("plugin-config/CompetiTest")
