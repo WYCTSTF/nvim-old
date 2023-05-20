@@ -1,5 +1,5 @@
 require'nvim-treesitter.configs'.setup {
-	ensure_installed = "all",
+	ensure_installed = {"c", "cpp", "haskell", "bash", "python"},
 	sync_install = true,
 	auto_install = true,
 	highlight = {
