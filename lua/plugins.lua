@@ -29,6 +29,12 @@ require('packer').startup(function(use)
 		"neovim/nvim-lspconfig",
 	}
 	use 'kassio/neoterm'
+
+  use {
+    'xeluxee/competitest.nvim',
+    requires = 'MunifTanjim/nui.nvim',
+    config = function() require'competitest'.setup() end
+  }
 end)
 
 pcall(
