@@ -79,6 +79,11 @@ _G.packer_plugins = {
     path = "/Users/syh/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
     url = "https://github.com/akinsho/bufferline.nvim"
   },
+  ["competitest.nvim"] = {
+    loaded = true,
+    path = "/Users/syh/.local/share/nvim/site/pack/packer/start/competitest.nvim",
+    url = "https://github.com/xeluxee/competitest.nvim"
+  },
   gruvbox = {
     loaded = true,
     path = "/Users/syh/.local/share/nvim/site/pack/packer/start/gruvbox",
@@ -103,6 +108,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/syh/.local/share/nvim/site/pack/packer/start/neoterm",
     url = "https://github.com/kassio/neoterm"
+  },
+  ["nui.nvim"] = {
+    loaded = true,
+    path = "/Users/syh/.local/share/nvim/site/pack/packer/start/nui.nvim",
+    url = "https://github.com/MunifTanjim/nui.nvim"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
