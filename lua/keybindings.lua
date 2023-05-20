@@ -83,3 +83,10 @@ map("n", "<leader>f", "<cmd>lua vim.lsp.buf.formatting()<CR>", opt)
 
 map("n", "<F5>", ":T clang++ -O2 -std=c++17 -fsanitize=address %:p -o %:p:r && %:p:r<CR>", opt)
 map("n", "<F6>", ":T clang++ -O2 -std=c++17 -fsanitize=address %:p -o %:p:r && %:p:r < %:p:h/in <CR>", opt)
+
+-- ACM
+map("n", "<leader>ca", ":CompetiTestAdd<CR>", opt)
+map("n", "<leader>cr", ":CompetiTestRun<CR>", opt)
+map("n", "<leader>ct", ":CompetiTestReceive testcases<CR>", opt)
+map("n", "<leader>cp", ":CompetiTestReceive problem<CR>", opt)
+map("n", "<leader>cd", ":CompetiTestDelete<CR>", opt)
