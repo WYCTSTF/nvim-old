@@ -22,3 +22,5 @@ vim.o.showmode = false
 vim.o.pumheight = 10
 vim.o.splitbelow = true
 vim.o.splitright = true
+vim.o.expandtab = true
+vim.bo.expandtab = true
