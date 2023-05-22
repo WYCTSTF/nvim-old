@@ -17,4 +17,4 @@ Specific shortcut key mappings and basic settings can be viewed in /lua/keybindi
 
 For competitive programming training purposes, I did not use the code completion plugin.
 
-if you need to install haskell-language-server by Mason, GHCup is required.
+if you need to install haskell-language-server by Mason, GHCup is required. Alternatively, you can remove it from lsp.lua
