@@ -85,7 +85,7 @@ require('competitest').setup {
 	compile_directory = ".",
 	compile_command = {
 		c = { exec = "gcc", args = { "-Wall", "$(FNAME)", "-o", "$(FNOEXT)" } },
-		cpp = { exec = "clang++", args = { "-fsanitize=address", "-std=c++17", "-DLOCAL", "$(FNAME)", "-o", "$(FNOEXT)" } },
+		cpp = { exec = "clang++", args = { "-fsanitize=address", "-std=c++17", "-DLOCAL", "-I /Users/syh/solution/header", "$(FNAME)", "-o", "$(FNOEXT)" } },
 		rust = { exec = "rustc", args = { "$(FNAME)" } },
 		java = { exec = "javac", args = { "$(FNAME)" } },
 	},
