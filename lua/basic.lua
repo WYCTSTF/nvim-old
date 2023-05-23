@@ -1,3 +1,4 @@
+vim.o.nu = true
 vim.o.rnu = true
 vim.o.ts = 2
 vim.o.sw = 2
@@ -12,7 +13,6 @@ vim.opt.backspace = {'indent', 'eol', 'start'}
 vim.o.backup = false
 vim.o.writebackup = false
 vim.o.swapfile = false
-vim.o.wrap = false
 vim.o.mouse = "a"
 vim.o.timeoutlen = 500
 vim.o.updatetime = 300
@@ -24,3 +24,4 @@ vim.o.splitbelow = true
 vim.o.splitright = true
 vim.o.expandtab = true
 vim.bo.expandtab = true
+vim.opt.ignorecase = true
