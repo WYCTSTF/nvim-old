@@ -87,6 +87,7 @@ map("n", "<leader>cr", ":CompetiTestRun<CR>", opt)
 map("n", "<leader>ct", ":CompetiTestReceive testcases<CR>", opt)
 map("n", "<leader>cp", ":CompetiTestReceive problem<CR>", opt)
 map("n", "<leader>cd", ":CompetiTestDelete<CR>", opt)
+map("n", "<leader>fr", ":!cd %:p:h && cf test<CR>", opt)
 
 -- 插件内快捷键
 local pluginKeys = {}

@@ -34,7 +34,6 @@ require('packer').startup(function(use)
     'xeluxee/competitest.nvim',
     requires = 'MunifTanjim/nui.nvim',
   }
-  use { "nvim-telescope/telescope.nvim" }
   use { "LinArcX/telescope-env.nvim" }
 end)
 
