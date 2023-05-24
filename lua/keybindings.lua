@@ -59,6 +59,8 @@ map("n", "<leader>bc", ":BufferLinePickClose<CR>", opt)
 map("n", "<C-p>", ":Telescope find_files<CR>", opt)
 -- 全局搜索
 map("n", "<C-f>", ":Telescope live_grep<CR>", opt)
+-- git文件
+map("n", "<leader>tg", ":Telescope git_files<CR>", opt)
 
 -- LSP
 -- rename
@@ -86,3 +88,26 @@ map("n", "<leader>ct", ":CompetiTestReceive testcases<CR>", opt)
 map("n", "<leader>cp", ":CompetiTestReceive problem<CR>", opt)
 map("n", "<leader>cd", ":CompetiTestDelete<CR>", opt)
 map("n", "<leader>fr", ":!cd %:p:h && cf test<CR>", opt)
+
+-- 插件内快捷键
+local pluginKeys = {}
+
+pluginKeys.telescopeList = {
+  i = {
+    -- 上下移动
+    ["<C-j>"] = "move_selection_next",
+    ["<C-k>"] = "move_selection_previous",
+    ["<Down>"] = "move_selection_next",
+    ["<Up>"] = "move_selection_previous",
+    -- 历史记录
+    ["<C-n>"] = "cycle_history_next",
+    ["<C-p>"] = "cycle_history_prev",
+    -- 关闭窗口
+    ["<C-c>"] = "close",
+    -- 预览窗口上下滚动
+    ["<C-u>"] = "preview_scrolling_up",
+    ["<C-d>"] = "preview_scrolling_down",
+  },
+}
+
+return pluginKeys
