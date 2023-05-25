@@ -25,3 +25,4 @@ vim.o.splitright = true
 vim.o.expandtab = true
 vim.bo.expandtab = true
 vim.opt.ignorecase = true
+vim.opt.guicursor = "n-v-c-sm:block,i-ci-ve:hor20-blinkoff150,r-cr-o:hor20"
