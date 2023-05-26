@@ -9,7 +9,7 @@ require("mason-lspconfig").setup({
     "pyright",
 	},
 })
-
+ 
 local lspconfig = require('lspconfig')
 
 require("mason-lspconfig").setup_handlers({
@@ -32,10 +32,10 @@ require("mason-lspconfig").setup_handlers({
     lspconfig.clangd.setup {
       cmd = {
         "clangd",
-        "--header-insertion=never",
+        -- "--header-insertion=never",
         "--query-driver=/opt/homebrew/opt/llvm/bin/clang",
-        "--all-scopes-completion",
-        "--completion-style=detailed",
+        -- "--all-scopes-completion",
+        -- "--completion-style=detailed",
       }
     }
   end

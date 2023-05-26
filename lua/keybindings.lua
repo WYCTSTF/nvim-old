@@ -63,6 +63,7 @@ map("n", "<C-f>", ":Telescope live_grep<CR>", opt)
 map("n", "<leader>tg", ":Telescope git_files<CR>", opt)
 
 -- LSP
+map("i", "<C-n>", "<cmd>lua vim.lsp.buf.completion()<CR>", opt)
 -- rename
 map("n", "<leader>rn", "<cmd>lua vim.lsp.buf.rename()<CR>", opt)
 map("n", "<leader>r", ":LspRestart<CR>", opt)

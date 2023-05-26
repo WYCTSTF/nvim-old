@@ -8,6 +8,7 @@ require("plugin-config/nvim-tree")
 require("plugin-config/bufferline")
 require("plugin-config/nvim-treesitter")
 require("plugin-config/telescope")
+require('neoscroll').setup()
 
 -- LSP
 require("mason").setup()
