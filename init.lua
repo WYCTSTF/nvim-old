@@ -9,6 +9,7 @@ require("plugin-config/bufferline")
 require("plugin-config/nvim-treesitter")
 require("plugin-config/telescope")
 require('neoscroll').setup()
+require("plugin-config/vimtex")
 
 -- LSP
 require("mason").setup()

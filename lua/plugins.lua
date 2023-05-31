@@ -34,6 +34,9 @@ require('packer').startup(function(use)
   }
   -- 平滑滚动
   use 'karb94/neoscroll.nvim'
+  use 'lervag/vimtex'
+  use {'honza/vim-snippets'}
+  use {'SirVer/ultisnips', ft = {'tex'}}
 end)
 
 pcall(
