@@ -10,6 +10,7 @@ require("plugin-config/nvim-treesitter")
 require("plugin-config/telescope")
 require('neoscroll').setup()
 require("plugin-config/vimtex")
+require("plugin-config/ultisnips")
 
 -- LSP
 require("mason").setup()

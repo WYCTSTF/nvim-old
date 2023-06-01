@@ -4,4 +4,4 @@ vim.g.UltiSnipsJumpForwardTrigger="<tab>"
 vim.g.UltiSnipsJumpBackwardTrigger="<S-tab>"
 -- 使用 UltiSnipsEdit 命令时垂直分割屏幕
 vim.g.UltiSnipsEditSplit="vertical"
-vim.g.UltiSnipsSnippetDirectories="~/ultisnips"
+vim.g.UltiSnipsSnippetDirectories="~/.config/nvim/ultisnips"
