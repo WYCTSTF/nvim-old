@@ -36,7 +36,7 @@ require('packer').startup(function(use)
   use 'karb94/neoscroll.nvim'
   use 'lervag/vimtex'
   use {'honza/vim-snippets'}
-  use {'SirVer/ultisnips', ft = {'tex'}}
+  use {'SirVer/ultisnips'}
 end)
 
 pcall(
