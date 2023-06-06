@@ -33,7 +33,7 @@ require("mason-lspconfig").setup_handlers({
       cmd = {
         "clangd",
         -- "--header-insertion=never",
-        "--query-driver=/opt/homebrew/opt/llvm/bin/clang",
+        "--query-driver=/opt/homebrew/opt/llvm/bin/clang++",
         -- "--all-scopes-completion",
         -- "--completion-style=detailed",
       }
