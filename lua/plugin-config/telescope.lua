@@ -1,6 +1,9 @@
 require("telescope").setup({
   defaults = {
     initial_mode = "insert",
+    file_ignore_patterns = {
+       "node_modules", "build", "dist", "yarn.lock"
+     },
     mappings = require("keybindings").telescopeList,
   },
   pickers = {
