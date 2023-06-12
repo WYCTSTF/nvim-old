@@ -1,4 +1,4 @@
-local colorscheme = "gruvbox"
+local colorscheme = "zephyr"
 vim.cmd('colorscheme '.. colorscheme)
 
 vim.o.background = "dark"
