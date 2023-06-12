@@ -36,7 +36,12 @@ require('packer').startup(function(use)
   use 'karb94/neoscroll.nvim'
   use 'lervag/vimtex'
   use {'honza/vim-snippets'}
+  use({
+    'glepnir/zephyr-nvim',
+    requires = { 'nvim-treesitter/nvim-treesitter', opt = true },
+  })
   use {'SirVer/ultisnips'}
+  use 'shaunsingh/nord.nvim'
 end)
 
 pcall(
