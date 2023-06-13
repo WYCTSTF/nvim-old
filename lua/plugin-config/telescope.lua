@@ -2,8 +2,8 @@ require("telescope").setup({
   defaults = {
     initial_mode = "insert",
     file_ignore_patterns = {
-       "node_modules", "build", "dist", "yarn.lock"
-     },
+      "node_modules", "build", "dist", "yarn.lock"
+    },
     mappings = require("keybindings").telescopeList,
   },
   pickers = {
@@ -13,7 +13,7 @@ require("telescope").setup({
     }
   },
   extensions = {
-     -- 扩展插件配置
+    -- 扩展插件配置
   },
 })
 require("telescope").load_extension("env")
