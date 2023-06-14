@@ -78,8 +78,8 @@ map("n", "gk", "<cmd>lua vim.diagnostic.goto_prev()<CR>", opt)
 map("n", "gj", "<cmd>lua vim.diagnostic.goto_next()<CR>", opt)
 map("n", "<leader>f", "<cmd>lua vim.lsp.buf.format()<CR>", opt)
 
-map("n", "<F5>", ":T clang++ -O2 -std=c++17 -fsanitize=address -I %:p -o %:p:r && %:p:r<CR>", opt)
-map("n", "<F6>", ":T clang++ -O2 -std=c++17 -fsanitize=address -I %:p -o %:p:r && %:p:r < %:p:h/in <CR>", opt)
+map("n", "<F5>", ":T clang++ -O2 -std=c++17 -fsanitize=address -DLOCAL %:p -o %:p:r && %:p:r<CR>", opt)
+map("n", "<F6>", ":T clang++ -O2 -std=c++17 -fsanitize=address -DLOCAL %:p -o %:p:r && %:p:r < %:p:h/in <CR>", opt)
 
 -- ACM
 map("n", "<leader>ca", ":CompetiTestAdd<CR>", opt)
