@@ -6,6 +6,7 @@ require('packer').startup(function(use)
     'nvim-lualine/lualine.nvim',
     requires = { 'kyazdani42/nvim-web-devicons', opt = true }
   }
+  use "liuchengxu/space-vim-dark"
 	use "morhetz/gruvbox"
 	use 'nvim-tree/nvim-tree.lua'
 	use {'akinsho/bufferline.nvim', tag = "*", requires = 'nvim-tree/nvim-web-devicons', 'moll/vim-bbye'}

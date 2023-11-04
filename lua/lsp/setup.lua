@@ -2,8 +2,8 @@ require("mason-lspconfig").setup({
 	ensure_installed = {
 		"lua_ls",
     "bashls",
-    "jdtls",
-    "hls",
+    --"jdtls",
+    --"hls",
     "clangd",
     "cmake",
     "pyright",
@@ -27,16 +27,16 @@ require("mason-lspconfig").setup_handlers({
         }
     }
   }
-  end,
-  ["clangd"] = function ()
-    lspconfig.clangd.setup {
-      cmd = {
-        "clangd",
-        -- "--header-insertion=never",
-        "--query-driver=/opt/homebrew/opt/llvm/bin/clang++",
-        -- "--all-scopes-completion",
-        -- "--completion-style=detailed",
-      }
-    }
   end
+--   ["clangd"] = function ()
+--     lspconfig.clangd.setup {
+--       cmd = {
+--         "clangd",
+--         -- "--header-insertion=never",
+--         "--query-driver=/opt/homebrew/opt/llvm/bin/clang++",
+--         -- "--all-scopes-completion",
+--         -- "--completion-style=detailed",
+--       }
+--     }
+--   end
 })
