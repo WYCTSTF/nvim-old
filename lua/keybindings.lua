@@ -56,9 +56,9 @@ map("n", "<leader>bc", ":BufferLinePickClose<CR>", opt)
 
 -- Telescope
 -- 查找文件
-map("n", "<C-p>", ":Telescope find_files<CR>", opt)
--- 全局搜索
-map("n", "<C-f>", ":Telescope live_grep<CR>", opt)
+map("n", "<leader>ff", ":Telescope find_files<CR>", opt)
+map("n", "<leader>fg", ":Telescope live_grep<CR>", opt)
+map("n", "<leader>fh", ":Telescope help_tags<CR>", opt)
 -- git文件
 map("n", "<leader>tg", ":Telescope git_files<CR>", opt)
 
@@ -78,8 +78,11 @@ map("n", "gk", "<cmd>lua vim.diagnostic.goto_prev()<CR>", opt)
 map("n", "gj", "<cmd>lua vim.diagnostic.goto_next()<CR>", opt)
 map("n", "<leader>f", "<cmd>lua vim.lsp.buf.format()<CR>", opt)
 
-map("n", "<F5>", ":T clang++ -O2 -std=c++17 -fsanitize=address -DLOCAL -I/Users/syh/solution/header/ %:p -o %:p:r && %:p:r<CR>", opt)
-map("n", "<F6>", ":T clang++ -O2 -std=c++17 -fsanitize=address -DLOCAL -I/Users/syh/solution/header/ %:p -o %:p:r && %:p:r < %:p:h/in <CR>", opt)
+map("n", "<F5>",
+  ":T clang++ -O2 -std=c++17 -fsanitize=address -DLOCAL -I/Users/syh/solution/header/ %:p -o %:p:r && %:p:r<CR>", opt)
+map("n", "<F6>",
+  ":T clang++ -O2 -std=c++17 -fsanitize=address -DLOCAL -I/Users/syh/solution/header/ %:p -o %:p:r && %:p:r < %:p:h/in <CR>",
+  opt)
 
 -- ACM
 map("n", "<leader>ca", ":CompetiTestAdd<CR>", opt)
