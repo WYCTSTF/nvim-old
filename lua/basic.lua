@@ -1,28 +1,35 @@
-vim.o.nu = true
-vim.o.rnu = true
-vim.o.ts = 2
-vim.o.sw = 2
-vim.bo.ts = 2
-vim.bo.sw = 2
-vim.o.scrolloff = 5
-vim.o.autoread = true
-vim.bo.autoread = true
-vim.o.incsearch = true
-vim.o.whichwrap = '<,>,[,]'
-vim.opt.backspace = {'indent', 'eol', 'start'}
-vim.o.backup = false
-vim.o.writebackup = false
-vim.o.swapfile = false
-vim.o.mouse = "a"
-vim.o.timeoutlen = 500
-vim.o.updatetime = 300
-vim.o.termguicolors = true
-vim.opt.wildmenu = true
-vim.o.showmode = false
-vim.o.pumheight = 10
-vim.o.splitbelow = true
-vim.o.splitright = true
-vim.o.expandtab = true
-vim.bo.expandtab = true
-vim.opt.ignorecase = true
-vim.opt.guicursor = "n-v-c-sm:block,i-ci-ve:hor20,r-cr-o:hor20"
+local set = vim.opt
+-- cursor can be positioned where there is no actual character.
+set.virtualedit = 'all'
+set.showbreak = '↪'
+set.nu = true
+set.rnu = true
+set.ts = 2
+set.sw = 2
+set.scrolloff = 5
+set.autoread = true
+set.incsearch = true
+set.whichwrap = '<,>,[,]'
+set.backspace = { 'indent', 'eol', 'start' }
+set.backup = false
+set.writebackup = false
+set.swapfile = false
+-- set.mouse = "a"
+set.termguicolors = true
+set.wildmenu = true
+set.showmode = false
+set.pumheight = 10
+set.splitbelow = true
+set.splitright = true
+set.expandtab = true
+set.ignorecase = true
+set.guicursor = "n-v-c-sm:block,i-ci-ve:hor20,r-cr-o:hor20"
+
+set.timeout = true
+-- Time in milliseconds to wait for a mapped sequence to complete.
+set.timeoutlen = 400
+--  Time in milliseconds to wait for a key code sequence to complete. Also
+-- 	used for CTRL-\ CTRL-N and CTRL-\ CTRL-G when part of a command has
+-- 	been typed.
+set.ttimeoutlen = 400
+set.shell = "/opt/homebrew/bin/bash"

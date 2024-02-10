@@ -6,10 +6,11 @@ require('lualine').setup({
       {
         "fileformat",
         symbols = {
-          unix = '', -- e712
+          unix = ' ',
         },
       },
       "filetype",
     },
+    -- transparent = true,
 	},
 })

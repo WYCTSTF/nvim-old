@@ -23,6 +23,7 @@ map("n", "sk", ":resize -10<CR>", opt)
 map("n", "<C-Down>", ":resize +2<CR>", opt)
 map("n", "<C-Up>", ":resize -2<CR>", opt)
 
+map("n", "<leader>wq", ":wqa<CR>", opt)
 map("n", "<leader>t", ":sp | terminal<CR>", opt)
 map("n", "<leader>vt", ":vsp | terminal<CR>", opt)
 map("t", "<Esc>", "<C-\\><C-n>", opt)
@@ -76,21 +77,25 @@ map("n", "gr", "<cmd>lua vim.lsp.buf.references()<CR>", opt)
 map("n", "gp", "<cmd>lua vim.diagnostic.open_float()<CR>", opt)
 map("n", "gk", "<cmd>lua vim.diagnostic.goto_prev()<CR>", opt)
 map("n", "gj", "<cmd>lua vim.diagnostic.goto_next()<CR>", opt)
+
 map("n", "<leader>f", "<cmd>lua vim.lsp.buf.format()<CR>", opt)
 
-map("n", "<F5>",
-  ":T clang++ -O2 -std=c++17 -fsanitize=address -DLOCAL -I/Users/syh/solution/header/ %:p -o %:p:r && %:p:r<CR>", opt)
+-- Compile
 map("n", "<F6>",
-  ":T clang++ -O2 -std=c++17 -fsanitize=address -DLOCAL -I/Users/syh/solution/header/ %:p -o %:p:r && %:p:r < %:p:h/in <CR>",
-  opt)
+  ":!clang++ -O2 -std=c++17 -I/Users/syh/solution/header/ %:p -o %:p:r", {noremap = true, silent = false})
+-- map("n", "<F6>",
+--   ":T clang++ -O2 -std=c++17 -fsanitize=address -DLOCAL -I/Users/syh/solution/header/ %:p -o %:p:r && %:p:r < %:p:h/in <CR>",
+--   opt)
+map("n", "<leader>mk", ":make<CR>", opt)
 
--- ACM
-map("n", "<leader>ca", ":CompetiTestAdd<CR>", opt)
-map("n", "<leader>cr", ":CompetiTestRun<CR>", opt)
-map("n", "<leader>ct", ":CompetiTestReceive testcases<CR>", opt)
-map("n", "<leader>cp", ":CompetiTestReceive problem<CR>", opt)
-map("n", "<leader>cd", ":CompetiTestDelete<CR>", opt)
-map("n", "<leader>fr", ":!cd %:p:h && cf test | more<CR>", opt)
+-- Debug
+-- map("n", "<leader>db", "reqire", opt)
+map("n", "<leader>dt", ":lua require'dapui'.toggle()<CR>", opt)
+map("n", "<F9>", ":lua require'dap'.toggle_breakpoint()<CR>", opt)
+map("n", "<F5>", ":lua require'dap'.continue()<CR>", opt)
+map("n", "<F10>", ":lua require'dap'.step_over()<CR>", opt)
+map("n", "<F11>", ":lua require'dap'.step_into()<CR>", opt)
+-- map("n", "<leader>dr", ":lua require'dap'.run()<CR>", opt)
 
 -- 插件内快捷键
 local pluginKeys = {}

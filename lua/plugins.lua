@@ -1,58 +1,54 @@
 vim.cmd [[packadd packer.nvim]]
 
 require('packer').startup(function(use)
-	use 'wbthomason/packer.nvim'
-	use {
-    'nvim-lualine/lualine.nvim',
-    requires = { 'kyazdani42/nvim-web-devicons', opt = true }
-  }
-  use "liuchengxu/space-vim-dark"
-	use "morhetz/gruvbox"
-	use 'nvim-tree/nvim-tree.lua'
-	use {'akinsho/bufferline.nvim', tag = "*", requires = 'nvim-tree/nvim-web-devicons', 'moll/vim-bbye'}
-	use {
-		'nvim-telescope/telescope.nvim', tag = '0.1.1',
-	-- or                            , branch = '0.1.x',
-		requires = { {'nvim-lua/plenary.nvim'} }
-	}
-  use { "LinArcX/telescope-env.nvim" }
-	use {
-		'nvim-treesitter/nvim-treesitter',
-		run = ':TSUpdate'
-	}
-	use {
-		"williamboman/mason.nvim",
-		run = ":MasonUpdate" -- :MasonUpdate updates registry contents
-	}
-	use {
-		"williamboman/mason-lspconfig.nvim",
-		"neovim/nvim-lspconfig",
-	}
-	use 'kassio/neoterm'
+  -- packer, plugin manager
+  use 'wbthomason/packer.nvim'
+  -- statusline
   use {
-    'xeluxee/competitest.nvim',
-    requires = 'MunifTanjim/nui.nvim',
+    'nvim-lualine/lualine.nvim',
+    requires = { 'nvim-tree/nvim-web-devicons', opt = true }
   }
-  -- 平滑滚动
-  use 'karb94/neoscroll.nvim'
+  -- Theme
+  use({ 'projekt0n/github-nvim-theme' })
+  -- File Explorer
+  use 'nvim-tree/nvim-tree.lua'
+  -- buffer
+  use { 'akinsho/bufferline.nvim', tag = "*", requires = 'nvim-tree/nvim-web-devicons', 'moll/vim-bbye' }
+  -- a highly extendable fuzzy finder over lists
+  use {
+    'nvim-telescope/telescope.nvim', tag = '0.1.x',
+    -- or                            , branch = '0.1.x',
+    requires = { { 'nvim-lua/plenary.nvim' } }
+  }
+  -- LSP
+  use {
+    "williamboman/mason.nvim",
+    run = ":MasonUpdate" -- :MasonUpdate updates registry contents
+  }
+  use {
+    "williamboman/mason-lspconfig.nvim",
+    "neovim/nvim-lspconfig",
+  }
+  -- Linter
+  use 'mfussenegger/nvim-lint'
   use 'lervag/vimtex'
-  use {'honza/vim-snippets'}
-  use({
-    'glepnir/zephyr-nvim',
-    requires = { 'nvim-treesitter/nvim-treesitter', opt = true },
-  })
-  use {'SirVer/ultisnips'}
+  use { 'honza/vim-snippets' }
+  use { 'SirVer/ultisnips' }
   use 'shaunsingh/nord.nvim'
+  use 'mfussenegger/nvim-dap'
+  use 'theHamsta/nvim-dap-virtual-text'
+  use { "rcarriga/nvim-dap-ui", requires = { "mfussenegger/nvim-dap" } }
+  use 'xiyaowong/transparent.nvim'
 end)
 
-pcall(
-  vim.cmd,
-  [[
-    augroup packer_user_config
-    autocmd!
-    autocmd BufWritePost plugins.lua source <afile> | PackerSync
-    augroup end
-  ]]
-)
+-- pcall(
+--   vim.cmd,
+--   [[
+--     augroup packer_user_config
+--     autocmd!
+--     autocmd BufWritePost plugins.lua source <afile> | PackerSync
+--     augroup end
+--   ]]
+-- )
 
 return

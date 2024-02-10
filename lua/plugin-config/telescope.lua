@@ -18,10 +18,7 @@ require("telescope").setup({
     find_files = {
       -- 查找文件换皮肤，支持的参数有： dropdown, cursor, ivy
       theme = "ivy",
+      no_ignore = true,
     }
   },
-  extensions = {
-    -- 扩展插件配置
-  },
 })
-require("telescope").load_extension("env")

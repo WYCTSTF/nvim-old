@@ -1,8 +1,6 @@
-local colorscheme = "space-vim-dark"
-vim.cmd('colorscheme '.. colorscheme)
-
-vim.o.background = "dark"
-vim.cmd('highlight Normal guibg=NONE ctermbg=None')
-vim.cmd('highlight LineNr guibg=NONE ctermbg=None')
-vim.cmd('highlight SignColumn guibg=NONE ctermbg=None')
-
+require('github-theme').setup({
+  options = {
+    transparent = true,
+  }
+})
+vim.cmd('colorscheme github_dark_high_contrast')
