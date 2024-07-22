@@ -1,6 +1,6 @@
 local set = vim.opt
 -- cursor can be positioned where there is no actual character.
-set.virtualedit = 'all'
+-- set.virtualedit = 'all'
 set.showbreak = '↪'
 set.nu = true
 set.rnu = true

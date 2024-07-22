@@ -79,6 +79,7 @@ map("n", "gk", "<cmd>lua vim.diagnostic.goto_prev()<CR>", opt)
 map("n", "gj", "<cmd>lua vim.diagnostic.goto_next()<CR>", opt)
 
 map("n", "<leader>f", "<cmd>lua vim.lsp.buf.format()<CR>", opt)
+map("n", "<leader>F", ":Format<CR>", opt)
 
 -- Compile
 map("n", "<F6>",

@@ -31,13 +31,15 @@ require('packer').startup(function(use)
   }
   -- Linter
   use 'mfussenegger/nvim-lint'
+  -- Formatter
+  require('packer').use { 'mhartington/formatter.nvim' }
   use 'lervag/vimtex'
   use { 'honza/vim-snippets' }
   use { 'SirVer/ultisnips' }
   use 'shaunsingh/nord.nvim'
-  use 'mfussenegger/nvim-dap'
-  use 'theHamsta/nvim-dap-virtual-text'
-  use { "rcarriga/nvim-dap-ui", requires = { "mfussenegger/nvim-dap" } }
+  -- use 'mfussenegger/nvim-dap'
+  -- use 'theHamsta/nvim-dap-virtual-text'
+  -- use { "rcarriga/nvim-dap-ui", requires = { "mfussenegger/nvim-dap" } }
   use 'xiyaowong/transparent.nvim'
 end)
 

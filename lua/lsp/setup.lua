@@ -5,7 +5,7 @@ require("mason-lspconfig").setup({
     --"hls",
     "clangd",
     "cmake",
-    "pyright",
+    -- "pyright",
   },
 })
 
@@ -36,6 +36,10 @@ require("mason-lspconfig").setup_handlers({
         -- "--all-scopes-completion",
         -- "--completion-style=detailed",
       }
+    }
+  end,
+  ["pylsp"] = function()
+    lspconfig.pylsp.setup {
     }
   end
 })

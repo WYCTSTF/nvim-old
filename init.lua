@@ -19,8 +19,10 @@ require("lsp/setup")
 
 -- Linter
 require'plugin-config/nvim-lint'
+-- Formatter
+require'plugin-config/formatter'
 
 -- DAP
-require("dap/nvim-dap")
-require("dap/dapui")
-require("dap/nvim-dap-virtual-text")
+-- require("dap/nvim-dap")
+-- require("dap/dapui")
+-- require("dap/nvim-dap-virtual-text")

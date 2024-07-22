@@ -1,5 +1,4 @@
 require('lint').linters_by_ft = {
-  python = {'pylint',},
   cpp = {'clangtidy',},
 }
 
@@ -9,7 +8,7 @@ vim.api.nvim_create_autocmd({ "BufWritePost" }, {
   end,
 })
 
-vim.diagnostic.config({ signs = false }, ns)
+vim.diagnostic.config({ signs = false })
 
 local lint_progress = function()
   local linters = require("lint").get_running()
